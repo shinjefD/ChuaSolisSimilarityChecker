@@ -18,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -37,29 +38,39 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../COLLEGE PROGRAMMING LABS/LBYCPA2/module 6/Solis-Module6-Activity4" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Application.softwareSimilarityChecker">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ChuaSolisSimilarityChecker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="programChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="programChecker" />
-      <module name="Solis-Checker-Module0" />
+      <module name="ChuaSolisSimilarityChecker" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="softwareSimilarityChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="softwareSimilarityChecker" />
-      <module name="Solis-Checker-Module0" />
+      <module name="ChuaSolisSimilarityChecker" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.softwareSimilarityChecker" />
         <item itemvalue="Application.programChecker" />
       </list>
@@ -83,114 +94,69 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="419" y="144" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1580308992805" />
-    <state x="438" y="226" width="404" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580352510639">
+    <state x="438" y="226" width="404" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580819272979">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="438" y="226" width="404" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1580352510639" />
-    <state width="1088" height="146" key="GridCell.Tab.0.bottom" timestamp="1580366264237">
+    <state x="438" y="226" width="404" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1580819272979" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1580818340603">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1088" height="146" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580366264237" />
-    <state width="1088" height="146" key="GridCell.Tab.0.center" timestamp="1580366264237">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1580818340603" />
+    <state width="617" height="204" key="GridCell.Tab.0.bottom" timestamp="1580820958723">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1088" height="146" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1580366264237" />
-    <state width="1088" height="146" key="GridCell.Tab.0.left" timestamp="1580366264237">
+    <state width="617" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580820958723" />
+    <state width="617" height="204" key="GridCell.Tab.0.center" timestamp="1580820958722">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1088" height="146" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1580366264237" />
-    <state width="1088" height="146" key="GridCell.Tab.0.right" timestamp="1580366264237">
+    <state width="617" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1580820958722" />
+    <state width="617" height="204" key="GridCell.Tab.0.left" timestamp="1580820958722">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1088" height="146" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1580366264237" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1580357927841">
+    <state width="617" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1580820958722" />
+    <state width="617" height="204" key="GridCell.Tab.0.right" timestamp="1580820958722">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1580357927841" />
+    <state width="617" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1580820958722" />
+    <state width="617" height="204" key="GridCell.Tab.1.bottom" timestamp="1580820958723">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="617" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580820958723" />
+    <state width="617" height="204" key="GridCell.Tab.1.center" timestamp="1580820958723">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="617" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1580820958723" />
+    <state width="617" height="204" key="GridCell.Tab.1.left" timestamp="1580820958723">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="617" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1580820958723" />
+    <state width="617" height="204" key="GridCell.Tab.1.right" timestamp="1580820958723">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="617" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1580820958723" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1580814600413">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1580814600413" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1580690872831">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1580690872831" />
     <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1580351831234">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1580351831234" />
+    <state x="91" y="43" key="new project wizard" timestamp="1580690984499">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="43" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1580690984499" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1580351115472">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1580351115472" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1580365468546">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1580703156217">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1580365468546" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Solis-Checker-Module0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1580703156217" />
   </component>
 </project>
