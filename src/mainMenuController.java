@@ -18,7 +18,12 @@ public class mainMenuController {
         String dir = pathDirectory.getText();
 
         Stage insertionSortStage = new Stage();
-        Parent insertRoot = FXMLLoader.load(getClass().getResource("similarityChecker.fxml"));
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("similarityChecker.fxml"));
+        Parent insertRoot = loader.load();
+        controller correlationMatrixController = loader.getController();
+        correlationMatrixController.setPath(dir);
+        correlationMatrixController.printTable();
         insertionSortStage.setTitle("Similarity Checker");
         insertionSortStage.setScene(new Scene(insertRoot, 1000, 500));
         insertionSortStage.show();

@@ -1,48 +1,53 @@
 import java.io.*;
+import java.lang.reflect.Array;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Stream;
 
 public class programSimilarityChecker {
     private String currentLine="";
-    private String path= "./Source Code";
     private HashMap<String, ArrayList<String>> storage = new HashMap<>();
     private String fileName;
-    File folder = new File(path);
-    File[] listOfFiles = folder.listFiles();
 
+    private ArrayList<String> toArrayList(File file) throws IOException {
+        ArrayList<String> tmpStorage = new ArrayList<>();
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        while ((currentLine = br.readLine()) != null) {
+            currentLine = currentLine.replaceAll("\\s+", "");
+            if (!tmpStorage.contains(currentLine)) {
+                tmpStorage.add(currentLine);
+            }
+        }
+        br.close();
+        return tmpStorage;
+    }
     public programSimilarityChecker(String pathName) throws IOException {
+        File folder = new File(pathName);
+        File[] listOfFiles = folder.listFiles();
         for (File file : listOfFiles) {
-//            if(file.isDirectory()) {
-//                for (File file1 : listOfFiles) {
-//                    fileName = file1.getName();
-//                    if (fileName.endsWith(".txt") || fileName.endsWith(".TXT") || fileName.endsWith(".txt") || fileName.endsWith(".cpp") || fileName.endsWith(".txt") || fileName.endsWith(".java")) {
-//                        ArrayList<String> tmpStorage = new ArrayList<>();
-//                        BufferedReader br = new BufferedReader(new FileReader(file));
-//                        while ((currentLine = br.readLine()) != null) {
-//                            currentLine = currentLine.replaceAll("\\s+", "");
-//                            if (!tmpStorage.contains(currentLine)) {
-//                                tmpStorage.add(currentLine);
-//                            }
-//                        }
-//                        br.close();
-//                        storage.put(fileName, tmpStorage);
-//                    }
-//                }
-//            }
-            if (file.isFile()) {
-                fileName = file.getName();
+            fileName = file.getName();
+            if(file.isDirectory()) {
+                try(Stream<Path> fileStream = Files.walk(file.toPath())){
+                    ArrayList<String> majorLines = new ArrayList<>();
+                    fileStream
+                            .filter(Files::isRegularFile)
+                            .forEach(path -> {
+                                try {
+                                    ArrayList<String> lines = toArrayList(path.toFile());
+                                    majorLines.addAll(lines);
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            });
+                    storage.put(fileName, majorLines);
+                }
+            }
+            else if (file.isFile()) {
                 if (fileName.endsWith(".txt") || fileName.endsWith(".TXT") || fileName.endsWith(".txt") || fileName.endsWith(".cpp") || fileName.endsWith(".txt") || fileName.endsWith(".java")) {
-                    ArrayList<String> tmpStorage = new ArrayList<>();
-                    BufferedReader br = new BufferedReader(new FileReader(file));
-                    while ((currentLine = br.readLine()) != null) {
-                        currentLine = currentLine.replaceAll("\\s+", "");
-                        if (!tmpStorage.contains(currentLine)) {
-                            tmpStorage.add(currentLine);
-                        }
-                    }
-                    br.close();
-                    storage.put(fileName, tmpStorage);
+                    storage.put(fileName, toArrayList(file));
                 }
             }
         }
