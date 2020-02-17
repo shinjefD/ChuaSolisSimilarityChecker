@@ -35,6 +35,7 @@ public class programSimilarityChecker {
                     fileStream
                             .filter(Files::isRegularFile)
                             .forEach(path -> {
+
                                 try {
                                     ArrayList<String> lines = toArrayList(path.toFile());
                                     majorLines.addAll(lines);
@@ -46,7 +47,7 @@ public class programSimilarityChecker {
                 }
             }
             else if (file.isFile()) {
-                if (fileName.endsWith(".txt") || fileName.endsWith(".TXT") || fileName.endsWith(".txt") || fileName.endsWith(".cpp") || fileName.endsWith(".txt") || fileName.endsWith(".java")) {
+                if (fileName.endsWith(".txt") || fileName.endsWith(".TXT") || fileName.endsWith(".h") || fileName.endsWith(".cpp") || fileName.endsWith(".txt") || fileName.endsWith(".java")) {
                     storage.put(fileName, toArrayList(file));
                 }
             }
@@ -67,6 +68,7 @@ public class programSimilarityChecker {
     }
     public double compare(ArrayList<String> project1, ArrayList<String> project2){
         double countComparison = 0;
+        if(project1 == project2) return 100;
         for (String temp1 : project1) {
             for (String temp2 : project2) {
                 if (temp1.equals(temp2)) {
@@ -74,7 +76,7 @@ public class programSimilarityChecker {
                 }
             }
         }
-        return (countComparison/Math.max(project1.size(), project2.size()) ) * 100;
+        return (countComparison/(project1.size() * project2.size()) ) * 100;
     }
 
     public HashMap<String, ArrayList<Double>> crossCompare(){
