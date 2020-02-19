@@ -2,10 +2,9 @@ import java.io.*;
 import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 public class programSimilarityChecker {
     private String currentLine="";
@@ -35,19 +34,24 @@ public class programSimilarityChecker {
                     fileStream
                             .filter(Files::isRegularFile)
                             .forEach(path -> {
+                                String innerFileName = path.toString();
+                                        if (innerFileName.endsWith(".c") || innerFileName.endsWith(".TXT") || innerFileName.endsWith(".h") || innerFileName.endsWith(".cpp") || innerFileName.endsWith(".txt") || innerFileName.endsWith(".java")) {
+                                            try {
+//                                                System.out.println(path);
+                                                ArrayList<String> lines = toArrayList(path.toFile());
+//                                                System.out.println(lines);
+                                                majorLines.addAll(lines);
+                                            } catch (IOException e) {
+                                                e.printStackTrace();
+                                            }
+                                        }
+                                    });
 
-                                try {
-                                    ArrayList<String> lines = toArrayList(path.toFile());
-                                    majorLines.addAll(lines);
-                                } catch (IOException e) {
-                                    e.printStackTrace();
-                                }
-                            });
                     storage.put(fileName, majorLines);
                 }
             }
             else if (file.isFile()) {
-                if (fileName.endsWith(".txt") || fileName.endsWith(".TXT") || fileName.endsWith(".h") || fileName.endsWith(".cpp") || fileName.endsWith(".txt") || fileName.endsWith(".java")) {
+                if (fileName.endsWith(".c") || fileName.endsWith(".TXT") || fileName.endsWith(".h") || fileName.endsWith(".cpp") || fileName.endsWith(".txt") || fileName.endsWith(".java")) {
                     storage.put(fileName, toArrayList(file));
                 }
             }
@@ -69,14 +73,18 @@ public class programSimilarityChecker {
     public double compare(ArrayList<String> project1, ArrayList<String> project2){
         double countComparison = 0;
         if(project1 == project2) return 100;
-        for (String temp1 : project1) {
-            for (String temp2 : project2) {
+        List<String> listWithoutDuplicates = project1.stream().distinct().collect(Collectors.toList());
+        List<String> listWithoutDuplicates1 = project2.stream().distinct().collect(Collectors.toList());
+        System.out.println(project1);
+        System.out.println(listWithoutDuplicates);
+        for (String temp1 : listWithoutDuplicates) {
+            for (String temp2 : listWithoutDuplicates1) {
                 if (temp1.equals(temp2)) {
                     countComparison++;
                 }
             }
         }
-        return (countComparison/(project1.size() * project2.size()) ) * 100;
+        return (countComparison/Math.max(project1.size(), project2.size())) * 100;
     }
 
     public HashMap<String, ArrayList<Double>> crossCompare(){
