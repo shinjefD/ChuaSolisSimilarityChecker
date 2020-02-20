@@ -75,8 +75,6 @@ public class programSimilarityChecker {
         if(project1 == project2) return 100;
         List<String> listWithoutDuplicates = project1.stream().distinct().collect(Collectors.toList());
         List<String> listWithoutDuplicates1 = project2.stream().distinct().collect(Collectors.toList());
-        System.out.println(project1);
-        System.out.println(listWithoutDuplicates);
         for (String temp1 : listWithoutDuplicates) {
             for (String temp2 : listWithoutDuplicates1) {
                 if (temp1.equals(temp2)) {
@@ -91,7 +89,7 @@ public class programSimilarityChecker {
         return crossCompare(storage);
     }
 
-    private HashMap<String, ArrayList<Double>> crossCompare(HashMap<String, ArrayList<String>> projects){
+    HashMap<String, ArrayList<Double>> crossCompare(HashMap<String, ArrayList<String>> projects){
         HashMap<String, ArrayList<Double>> comparisons = new HashMap<>();
         for (Map.Entry<String, ArrayList<String>> entry : projects.entrySet()){
             String name = entry.getKey();
