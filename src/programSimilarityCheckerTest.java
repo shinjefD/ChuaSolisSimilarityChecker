@@ -1,6 +1,10 @@
+import org.junit.Test;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -28,5 +32,21 @@ public class programSimilarityCheckerTest {
 
     @org.junit.Test
     public void crossCompare() {
+        boolean allValuesPassed = true;
+        HashMap<String, ArrayList<Double>> table = checker.crossCompare();
+        for (Map.Entry<String, ArrayList<Double>> entry : table.entrySet()){
+            ArrayList<Double> scores = entry.getValue();
+            for(Double score : scores){
+                if(score < 0 || score > 100) {
+                    assert(allValuesPassed = false);
+                }
+            }
+        }
+        assert(allValuesPassed);
+    }
+    @Test
+    public void directoryFilesSize() {
+        System.out.println(checker.getStorage().size());
+        assert(checker.getStorage().size() == 36);
     }
 }

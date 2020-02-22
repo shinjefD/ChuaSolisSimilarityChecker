@@ -11,6 +11,10 @@ public class programSimilarityChecker {
     private HashMap<String, ArrayList<String>> storage = new HashMap<>();
     private String fileName;
 
+    public HashMap<String, ArrayList<String>> getStorage(){
+        return storage;
+    }
+
     private ArrayList<String> toArrayList(File file) throws IOException {
         ArrayList<String> tmpStorage = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(file));

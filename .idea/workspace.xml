@@ -22,6 +22,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -47,13 +48,24 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.programSimilarityCheckerTest.crossCompare">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ChuaSolisSimilarityChecker" />
@@ -68,26 +80,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="programChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programChecker" />
+    <configuration name="programSimilarityCheckerTest.compare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChuaSolisSimilarityChecker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="programSimilarityCheckerTest" />
+      <option name="METHOD_NAME" value="compare" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="softwareSimilarityChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="softwareSimilarityChecker" />
+    <configuration name="programSimilarityCheckerTest.crossCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChuaSolisSimilarityChecker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="programSimilarityCheckerTest" />
+      <option name="METHOD_NAME" value="crossCompare" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="programSimilarityCheckerTest.directoryFilesSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChuaSolisSimilarityChecker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="programSimilarityCheckerTest" />
+      <option name="METHOD_NAME" value="directoryFilesSize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.programSimilarityCheckerTest.crossCompare" />
+        <item itemvalue="JUnit.programSimilarityCheckerTest.directoryFilesSize" />
+        <item itemvalue="JUnit.programSimilarityCheckerTest.compare" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MetricMain" />
-        <item itemvalue="Application.softwareSimilarityChecker" />
-        <item itemvalue="Application.programChecker" />
       </list>
     </recent_temporary>
   </component>
@@ -121,22 +150,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1580818340603" />
-    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1582123190437">
+    <state width="1237" height="238" key="GridCell.Tab.0.bottom" timestamp="1582379163523">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582123190437" />
-    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1582123190437">
+    <state width="1237" height="238" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582379163523" />
+    <state width="1237" height="238" key="GridCell.Tab.0.center" timestamp="1582379163523">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582123190437" />
-    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1582123190437">
+    <state width="1237" height="238" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582379163523" />
+    <state width="1237" height="238" key="GridCell.Tab.0.left" timestamp="1582379163523">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582123190437" />
-    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1582123190437">
+    <state width="1237" height="238" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582379163523" />
+    <state width="1237" height="238" key="GridCell.Tab.0.right" timestamp="1582379163523">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582123190437" />
+    <state width="1237" height="238" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582379163523" />
     <state width="1237" height="203" key="GridCell.Tab.1.bottom" timestamp="1582123190427">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -157,14 +186,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1580814600413" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1582111806409">
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1582374457448">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1582111806409" />
-    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1580351831234">
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1582374457448" />
+    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582162861606">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1580351831234" />
+    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1582162861606" />
+    <state x="411" y="43" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1582162854269">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="411" y="43" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1582162854269" />
     <state x="91" y="43" key="new project wizard" timestamp="1580690984499">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
